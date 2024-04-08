@@ -1,0 +1,166 @@
+*{
+	margin: 0 ;
+	padding: 0 ;
+}
+
+html{
+	font-size: 10px;
+}
+
+/* a태그 css */
+.move{
+	text-decoration: none;
+	color: inherit;
+}
+
+/* 테이블 기본설정 */
+.board_table_wrap {
+	width : 1000px;
+	margin : 100px auto;
+}
+
+.board_header{
+	margin-bottom: 30px;
+}
+
+.board_header strong{
+	font-size: 3rem !important;
+}
+
+.board_header p{
+	margin-top: 5px;
+	font-size: 1.4rem;
+}
+
+.board_list{
+	width: 100%;
+	border-top: 2px solid #000; 
+	font-size: 1.4rem;
+}
+
+.board_list > div{
+	border-bottom: 1px solid #ddd;
+}
+
+.board_list > div.top{
+	border-bottom: 1px solid #ddd; 
+}
+
+.board_list > div:last-child{
+	border-bottom: 1px solid #000;
+}
+
+.board_list .bno {
+	width: 5%;
+}
+
+
+.board_list .title {
+	width: 65%;
+}
+
+.board_list .writer {
+	width: 9%;
+}
+
+.board_list .regdate {
+	width: 9%;
+}
+
+.board_list .update_date {
+	width: 9%;
+}
+
+
+.board_list > div > div {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	padding: 15px 0;
+	font-size: 1.4rem;
+}
+
+.board_list > div.top > div {
+	font-weight: 600;
+}
+
+/* 검색창 css */
+.search_wrap{
+	margin-top: 30px;
+	text-align: center;
+}
+
+.search_area{
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.search_area select, .search_area input[type="text"] {
+	height: 36px;
+	padding: 0 10px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+
+.search_area button {
+	height: 36px;
+	padding: 0 20px;
+	font-size: 16px;
+	background-color: #999;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.search_area button:hover {
+	background-color: #0056b3;
+}
+
+/* 페이지 정보 래퍼 */
+.pageInfo_wrap {
+	margin-top: 30px;
+    text-align: center;
+    font-size: 0;
+}
+
+.pageInfo_area {
+	display: inline-block;
+}
+
+.pageInfo {
+	list-style: none;
+	padding: 0;
+}
+
+.pageInfo_btn {
+	display: inline-block;
+	margin: 0 5px;
+	padding: 8px 12px;
+	font-size: 16px;
+	border-radius: 5px;
+	transition: background-color 0.3s, color 0.3s;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.pageInfo_btn.previous, .pageInfo_btn.next {
+	font-weight: bold;
+}
+
+.pageInfo_btn:hover {
+	color: white;
+}
+
+.pageInfo_btn.active {
+	background-color: #999;
+	color: white;
+}
+
+.pageInfo_btn a { /* 링크에 대한 밑줄 제거 */
+	text-decoration: none;
+	color: black; /* 링크 텍스트의 색상을 검정색으로 변경 */
+}
